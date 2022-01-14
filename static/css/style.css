@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.menu{
+    
+    background: #a22259;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 34px;
+    padding: 0 80px;
+    font-weight: bold;
+    color: white;
+    
+}
+.logo2{
+    font-size: 34px;
+    padding: 0 40px;
+    font-weight: bold;
+}
+.logo3{
+    margin-left: 10%;
+}
+
+.logo4{
+    margin-left: 21%;
+}
+
+.menu-opc{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu-opc li{
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.menu-opc li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: white;
+}
+.menu-opc li :hover{
+    background: blanchedalmond;
+    transition: .4s;
+    color: black;
+}
+.menu-opc li a:hover{
+    color: black;
+}
+.form{
+    width: 300px;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 70px 0px;
+    border: 0px solid black;
+    text-align: center;
+    margin-left: 21%;
+}
+
+.form label{
+    margin: 0;
+    padding: -15px -40px;
+    font-weight: bold;
+    display: block;
+    font-size: 15px;
+}
+
+.form-input{
+    height: 35px;
+    width: 92%;
+    border: 2px solid rgba(201, 195, 195, 0.76);
+    border-radius: 5px;
+}
+
+.form button, .entrada button{
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    width: 90px;
+    background: #94124a;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+/* login*/
+
+.login{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 15px;
+  
+}
+.registro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 15px;
+    margin-left: 20%;
+}
+
+/* home*/
+
+body{
+    margin: 0;
+    background-image: url(../img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+body:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #d9a7c7, #fffcdc);
+    opacity: 0.6;
+    z-index: -1;
+}
+.entrada{
+    color: #841947;
+    font-size:x-large;
+    margin-top: 200px;
+    text-align: center;
+
+}
+.inicio{
+    color: #ffffff;
+    font-size:small;
+    margin-top: 200px;
+    text-align: center;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.448);
+}
+
+.inicio button{
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    width: 90px;
+    background: #ffffff;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.home{
+    margin: 0;
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+.home2{
+    margin: 0;
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home2:before{
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #00f260, #0575e6);
+    opacity: 0.4;
+    z-index: -1;
+}

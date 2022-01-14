@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block title %} Registro {% endblock %}
+
+{% block content %}
+
+    <div class="registro">
+        <form class=form action="/registro" method="POST">
+
+            <h1 class="form_titulo">Registro</h1><br>
+
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" class="form-input" name="name">
+            </div>
+            
+            <div class="form-group">
+                <label>Tipo Usuario:</label>
+                <select class="form-input" name= "tipo">
+                    <option value="0">           </option>
+                    {% for tip in tipo %}
+                    <option value="{{tip.id_tip_usu}}">{{ tip.nom_tip_usu }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Seleccione el sexo de interes:</label>
+                <select class="form-input" name= "interes">
+                    <option value="0">           </option>
+                    {% for sex in interes %}
+                    <option value="{{sex.id_sex}}">{{ sex.nom_sex}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+                
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" class="form-input" name="email">
+            </div>
+
+            <div class="form-group">
+                <label>Contraseña:</label>
+                <input type="password" class="form-input" name="password">
+            </div>
+
+            <div class="form-group">
+                <button class="boton">Registrar</button>
+            </div>
+
+        </form>
+
+        <div class="img">
+            <img src="{{url_for('static', filename='img/registro.jpg')}}"  width=400px height=520px class="logo4" >
+        </div>
+
+    </div>
+
+{% endblock %}
