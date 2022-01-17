@@ -1,7 +1,7 @@
-Holaaa Soy Daniela .
+Hola...
 
 
-En este repositorio encontraras una aplicación web con temática de citas en linea, haciendo uso del Framework Flask y con conexión a una base de datos, y siendo total mente funcional.
+En este repositorio encontraras una aplicación web con temática de citas en linea, se hace uso del Framework Flask para la creación de un Login y SignUp, con conexión a una base de datos, siendo total mente funcional.
 
 Espero que te sea de gran ayuda y logres aprender.
 
@@ -11,4 +11,4 @@ Librerias a descargar
 + Notificaciones  --- pip install notify-py
 
 
-El archivo app_citas.sql corresponde a la base de datos propuesta par la aplicación, necesaria para su funcionalidad.
+El archivo app_citas.sql corresponde a la base de datos propuesta para la aplicación, necesaria para su funcionalidad.
